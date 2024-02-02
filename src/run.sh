@@ -1,1 +1,10 @@
+#!/usr/bin/env bash
 
+if [ "$CURSOR" = "true" ];
+then
+    echo  "Starting X with cursor enabled"
+    exec startx -- $FORCE_DISPLAY
+else
+    echo  "Starting X with cursor disabled"
+    exec startx -- $FORCE_DISPLAY -nocursor
+fi
