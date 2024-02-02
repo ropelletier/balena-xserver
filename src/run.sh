@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+echo "Starting xserver"
 if [ "$CURSOR" = "true" ];
 then
     echo  "Starting X with cursor enabled"
